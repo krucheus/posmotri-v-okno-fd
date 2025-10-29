@@ -65,22 +65,22 @@ ol {
 
 .search-form {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .content__list-container {
   display: flex;
   flex-direction: column;
+  gap: 26px;
   height: 298px;
   overflow-y: auto;
-  gap: 26px;
 }
 
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
 }
 
 .result__video {
@@ -109,12 +109,47 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  height: 103px;
   min-width: 194px;
-  object-fit: contain;
+  height: 103px;
+  object-fit: fill;
   object-position: right;
 }
 
 .content__video-card-description-container {
   flex-grow: 1;
+}
+
+.search-form__fieldset-title {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  font-family: "Oswald", sans-serif;
+  width: 196px;
+  font-size: 30px;
+  text-transform: uppercase; /** ПОЧИТАТЬ **/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content__video-card-description {
+  line-height: 16.2px;
 }
