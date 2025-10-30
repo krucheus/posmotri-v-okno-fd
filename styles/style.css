@@ -80,6 +80,7 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -88,6 +89,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 22px;
@@ -105,10 +107,15 @@ ol {
   gap: 30px;
 }
 
+.content__list-item {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 17px;
   width: 100%;
   height: 100%;
 }
@@ -170,6 +177,9 @@ ol {
 }
 
 .search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   border: none;
 }
 
@@ -181,6 +191,7 @@ ol {
 }
 
 .search-form__textfield {
+  min-width: 225px;
   border-top: 1px solid;
   border-right: none;
   border-bottom: 1px solid;
@@ -196,15 +207,13 @@ ol {
   color: rgb(255 255 255 / 0.7);
 }
 
-/** .search-form__textfield:focus {
+.search-form__textfield:focus {
   outline: none;
 }
 
-ПЕРЕДЕЛАТЬ!!!!!!!!!!
-
 .search-form__label:has(:focus-visible) {
   outline: 1px solid;
-} **/ 
+} 
 
 .search-form__pseudo-checkbox {
   width: 19px;
@@ -227,5 +236,71 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
+  outline: 1px solid;
+}
+
+.button {
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.search-form__submit-button {
+  align-self: end;
+  padding: 6px 73px;
+}
+
+.more-button {
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid;
+}
+
+.content__card-link {
+  display: block;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
   outline: 1px solid;
 }
