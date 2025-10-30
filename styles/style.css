@@ -69,7 +69,7 @@ ol {
 .content {
   display:flex;
   align-items: flex-end;
-  gap: 30px;
+  gap: 29px;
   width: 1140px;
 }
 
@@ -92,7 +92,7 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 .result__video {
@@ -179,7 +179,7 @@ ol {
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   border: none;
 }
 
