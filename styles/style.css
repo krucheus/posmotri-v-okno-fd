@@ -209,7 +209,7 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
   outline-offset: 2px;
 }
 
@@ -272,7 +272,7 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 1px solid;
+  outline: 1px solid currentColor;
   outline-offset: 2px;
 }
 
@@ -297,5 +297,5 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid;
+  outline: 1px solid currentColor;
 }
