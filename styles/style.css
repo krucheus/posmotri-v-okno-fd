@@ -164,8 +164,8 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 .search-form__checkbox-list {
